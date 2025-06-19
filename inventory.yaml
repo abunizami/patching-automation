@@ -1,0 +1,14 @@
+servers:
+  - name: win-app01
+    ip: 10.0.0.10
+    os: windows
+    username: Administrator
+    password: securepass123
+    roles: [web, db]
+
+  - name: linux-app01
+    ip: 10.0.0.20
+    os: linux
+    username: ubuntu
+    key_file: ~/.ssh/id_rsa
+    roles: [web]
